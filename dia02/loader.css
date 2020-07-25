@@ -1,0 +1,142 @@
+:root {
+    --background-color: #628b80
+}
+body {
+    font-family: 'Amatic SC', cursive;
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-color);
+    color: #cf8c7d
+}
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 64px;
+    
+    width: 300px;
+    height: 300px;
+    border-radius: 300px;
+
+    border: solid black thin;
+    /* box-shadow: rgb(73, 83, 80) -2px 5px 10px; */
+    background-color: #588377;
+}
+
+.loading:hover {
+    animation: loading 1s infinite;
+    transition: box-shadow 2s;
+}
+/* 
+@keyframes loading {
+    0% {box-shadow: #cf8c7d 2px 2px 1px}
+    25% {box-shadow: #cf8c7d 2px -2px 1px}
+    50% {box-shadow: #cf8c7d -2px -2px 1px}
+    100% {box-shadow: #cf8c7d -2px 2px 1px}
+} */
+
+@keyframes loading {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+
+.ambientacao {
+    width: 500px;
+    height: 500px;
+    border-radius: 250px;
+
+    box-shadow: rgb(60, 63, 63) -10px 10px 10px;
+}
+
+.vinil {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+
+    background-color: black;    
+    transform: translate();
+    animation: girando 3s infinite;
+}
+
+
+@keyframes girando {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+.risco {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-left: solid rgb(54, 53, 53) 5px;
+    border-right: solid rgb(54, 53, 53) 5px;
+    transform: rotate(165deg);
+}
+
+
+.externo {
+    width: 400px;
+    height: 400px;
+    border-radius: 200px;
+
+    /* background-color: red; */
+}
+
+.intermediario {
+    width: 350px;
+    height: 350px;
+    border-radius: 175px;
+}
+
+.interno {
+    width: 250px;
+    height: 250px;
+    border-radius: 125px;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+
+    background-color: rgba(251, 80, 0, 0.705);
+}
+
+.fiozinho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 130px;
+    height: 130px;
+    border-radius: 70px;
+
+    border: solid black thin;
+    box-shadow: rgb(59, 5, 5) inset 1px 1px 2px, rgb(59, 5, 5) inset -1px -1px 2px;
+}
+
+.fiozinho p {
+    font-size: 48px;
+}
+
