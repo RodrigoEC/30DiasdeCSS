@@ -28,7 +28,7 @@ dos #30DiasdeCSS. Descobri esse desafio no [github da Milena Carecho](https://gi
 
 ## Dia 02 - Loader animado
 
-<img src="./img/vinil.gif" style="height:400px">
+<img src="./img/vinil.gif" style="height:300px">
 
 **Meu código: [Loader de vinil animado](https://github.com/RodrigoEC/30DiasdeCSS/tree/master/dia02)**
 

@@ -1,0 +1,80 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'VT323', monospace;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgb(1, 0, 20);
+    background-image: url("../../img/estrelas2.svg");
+}
+
+.path {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 350px;
+    height: 350px;
+
+    border: dotted white thin;
+    border-radius: 50%;
+
+    color: white;
+    font-size: 40px;
+
+    animation: brilho 3s infinite;
+}
+
+.loader {
+    text-decoration: underline grey;
+    /* transform: skew(25deg); */
+}
+
+.loader_dot {
+    animation: 3s blink linear infinite;
+}
+
+.loader_dot:nth-child(2) {
+    animation-delay: 250ms;
+}
+
+.loader_dot:nth-child(3) {
+    animation-delay: 500ms;
+}
+
+.planet {
+    width: 70px;
+    height: 70px;
+
+    background-image: url("../../img/terra.svg");
+
+    border-radius: 100%;
+
+    position: absolute;
+
+    animation: girando 6s linear infinite;
+}
+
+@keyframes brilho {
+    0% {box-shadow: inset 5px 5px 20px 5px rgb(251, 251, 251), 3px 3px 40px 3px rgb(251, 251, 251);}
+    50% {box-shadow: inset 5px 5px 25px 5px rgb(251, 251, 251), 3px 3px 45px 3px rgb(251, 251, 251);}
+    100% {box-shadow: inset 5px 5px 20px 5px rgb(251, 251, 251), 3px 3px 40px 3px rgb(251, 251, 251);}
+}
+
+@keyframes blink {
+    50% {color: transparent; text-decoration: underline rgb(172, 171, 171);}
+}
+
+@keyframes girando {
+    0% {transform: rotate(0deg) translateX(175px) rotate(0deg) }
+    100% {transform:  rotate(360deg) translateX(175px) rotate(360deg)}
+
+}

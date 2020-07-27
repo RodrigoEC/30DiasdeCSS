@@ -70,7 +70,7 @@ main {
 
     background-color: black;    
     transform: translate();
-    animation: girando 3s infinite;
+    animation: girando 2s linear infinite;
 }
 
 
